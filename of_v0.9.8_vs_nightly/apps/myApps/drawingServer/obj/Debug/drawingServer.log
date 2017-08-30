@@ -1,0 +1,351 @@
+﻿  main.cpp
+  ofApp.cpp
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(142): warning C4267: 'return': conversion from 'size_t' to 'Poco::UInt16', possible loss of data (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(141): note: while compiling class template member function 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(153): note: see reference to function template instantiation 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(152): note: while compiling class template member function 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to function template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: while compiling class template member function 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>::RecursiveDirectoryIterator(const Poco::Path &,Poco::UInt16)' (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(400): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>' being compiled (compiling source file src\main.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(186): warning C4101: 'exc': unreferenced local variable (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(171): note: while compiling class template member function 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onWebSocketFrameReceivedEvent(ofx::HTTP::WebSocketFrameEventArgs &)' (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxHTTP\libs\ofxHTTP\include\ofx/HTTP/WebSocketRoute.h(237): note: see reference to function template instantiation 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onWebSocketFrameReceivedEvent(ofx::HTTP::WebSocketFrameEventArgs &)' being compiled (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(115): note: see reference to function template instantiation 'void ofx::HTTP::WebSocketRoute::unregisterWebSocketEvents<ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>>(ListenerClass *,int)' being compiled
+          with
+          [
+              ListenerClass=ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>
+          ] (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(114): note: while compiling class template member function 'ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::~JSONRPCServer_(void)' (compiling source file src\main.cpp)
+  c:\users\carlos\documents\projects\colaborativedrawing\of_v0.9.8_vs_nightly\apps\myapps\drawingserver\src\ofApp.h(37): note: see reference to class template instantiation 'ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>' being compiled (compiling source file src\main.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(194): warning C4101: 'exc': unreferenced local variable (compiling source file src\main.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(255): warning C4101: 'exc': unreferenced local variable (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(239): note: while compiling class template member function 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onHTTPPostEvent(ofx::HTTP::PostEventArgs &)' (compiling source file src\main.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxHTTP\libs\ofxHTTP\include\ofx/HTTP/PostRoute.h(143): note: see reference to function template instantiation 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onHTTPPostEvent(ofx::HTTP::PostEventArgs &)' being compiled (compiling source file src\main.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(142): warning C4267: 'return': conversion from 'size_t' to 'Poco::UInt16', possible loss of data (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(141): note: while compiling class template member function 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(153): note: see reference to function template instantiation 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(152): note: while compiling class template member function 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to function template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: while compiling class template member function 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>::RecursiveDirectoryIterator(const Poco::Path &,Poco::UInt16)' (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(400): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>' being compiled (compiling source file src\ofApp.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(186): warning C4101: 'exc': unreferenced local variable (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(171): note: while compiling class template member function 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onWebSocketFrameReceivedEvent(ofx::HTTP::WebSocketFrameEventArgs &)' (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxHTTP\libs\ofxHTTP\include\ofx/HTTP/WebSocketRoute.h(237): note: see reference to function template instantiation 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onWebSocketFrameReceivedEvent(ofx::HTTP::WebSocketFrameEventArgs &)' being compiled (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(115): note: see reference to function template instantiation 'void ofx::HTTP::WebSocketRoute::unregisterWebSocketEvents<ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>>(ListenerClass *,int)' being compiled
+          with
+          [
+              ListenerClass=ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>
+          ] (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(114): note: while compiling class template member function 'ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::~JSONRPCServer_(void)' (compiling source file src\ofApp.cpp)
+  c:\users\carlos\documents\projects\colaborativedrawing\of_v0.9.8_vs_nightly\apps\myapps\drawingserver\src\ofApp.h(37): note: see reference to class template instantiation 'ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>' being compiled (compiling source file src\ofApp.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(194): warning C4101: 'exc': unreferenced local variable (compiling source file src\ofApp.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(255): warning C4101: 'exc': unreferenced local variable (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx/HTTP/JSONRPCServer.h(239): note: while compiling class template member function 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onHTTPPostEvent(ofx::HTTP::PostEventArgs &)' (compiling source file src\ofApp.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxHTTP\libs\ofxHTTP\include\ofx/HTTP/PostRoute.h(143): note: see reference to function template instantiation 'bool ofx::HTTP::JSONRPCServer_<ofx::HTTP::SimpleSessionStore>::onHTTPPostEvent(ofx::HTTP::PostEventArgs &)' being compiled (compiling source file src\ofApp.cpp)
+  AuthScope.cpp
+  BaseClient.cpp
+  BaseRoute.cpp
+  BaseServer.cpp
+  Client.cpp
+  ClientCache.cpp
+  ClientEvents.cpp
+  ClientProgressStream.cpp
+  ClientSessionProvider.cpp
+  ClientSessionSettings.cpp
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientSessionProvider.cpp(146): warning C4101: 'exc': unreferenced local variable
+  ClientState.cpp
+  Context.cpp
+  Cookie.cpp
+  CookieStore.cpp
+  CookieUtils.cpp
+  Credentials.cpp
+  CredentialStore.cpp
+  DefaultClientHeaders.cpp
+  DefaultCookieProcessor.cpp
+  DefaultEncodingResponseStreamFilter.cpp
+  DefaultProxyProcessor.cpp
+  DefaultRedirectProcessor.cpp
+  FileSystemRoute.cpp
+  FormRequest.cpp
+  GetRequest.cpp
+  GetRequestTask.cpp
+  HeadRequest.cpp
+  HTTPClient.cpp
+  HTTPHost.cpp
+  HTTPUtils.cpp
+  IPVideoFrame.cpp
+  IPVideoRoute.cpp
+  JSONRequest.cpp
+  JSONWebToken.cpp
+  OAuth10Credentials.cpp
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\IPVideoRoute.cpp(389): warning C4101: 'exc': unreferenced local variable
+  OAuth10HTTPClient.cpp
+  OAuth10RequestFilter.cpp
+  OAuth20Credentials.cpp
+  OAuth20HTTPClient.cpp
+  OAuth20RequestFilter.cpp
+  PostRequest.cpp
+  PostRoute.cpp
+  Progress.cpp
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Progress.cpp(74): warning C4244: 'return': conversion from 'const int64_t' to 'float', possible loss of data
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Progress.cpp(80): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+  ProxySettings.cpp
+  PutRequest.cpp
+  Request.cpp
+  RequestHandlerAdapter.cpp
+  Response.cpp
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Request.cpp(111): warning C4101: 'exc': unreferenced local variable
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Request.cpp(137): warning C4101: 'exc': unreferenced local variable
+  Session.cpp
+  SessionStore.cpp
+  SimpleClient.cpp
+  SimpleFileServer.cpp
+  SimpleIPVideoServer.cpp
+  SimplePostServer.cpp
+  SimpleSSEServer.cpp
+  SimpleWebSocketServer.cpp
+  SSEConnection.cpp
+  SSEFrame.cpp
+  SSERoute.cpp
+  ThreadSettings.cpp
+  URIBuilder.cpp
+  WebSocketConnection.cpp
+  WebSocketExtensions.cpp
+  WebSocketFrame.cpp
+  WebSocketRoute.cpp
+..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\WebSocketExtensions.cpp(129): warning C4101: 'exc': unreferenced local variable
+  dictionary.c
+  bit_reader.c
+  decode.c
+  huffman.c
+  state.c
+  backward_references.c
+  bit_cost.c
+  block_splitter.c
+  brotli_bit_stream.c
+  cluster.c
+  compressor.cc
+  compress_fragment.c
+  compress_fragment_two_pass.c
+c:\users\carlos\documents\projects\colaborativedrawing\of_v0.9.8_vs_nightly\addons\ofxio\libs\brotli\src\enc\./hash.h(181): warning C4018: '<': signed/unsigned mismatch (compiling source file ..\..\..\addons\ofxIO\libs\brotli\src\enc\backward_references.c)
+  encode.c
+  encode_parallel.cc
+  entropy_encode.c
+  histogram.c
+  literal_cost.c
+  memory.c
+  metablock.c
+c:\users\carlos\documents\projects\colaborativedrawing\of_v0.9.8_vs_nightly\addons\ofxio\libs\brotli\src\enc\./hash.h(181): warning C4018: '<': signed/unsigned mismatch (compiling source file ..\..\..\addons\ofxIO\libs\brotli\src\enc\encode.c)
+  static_dict.c
+  streams.cc
+  utf8_util.c
+c:\users\carlos\documents\projects\colaborativedrawing\of_v0.9.8_vs_nightly\addons\ofxio\libs\brotli\src\enc\./hash.h(181): warning C4018: '<': signed/unsigned mismatch (compiling source file ..\..\..\addons\ofxIO\libs\brotli\src\enc\encode_parallel.cc)
+  lz4.c
+  BackoffStrategy.cpp
+  Base64Encoding.cpp
+  ByteBuffer.cpp
+  ByteBufferReader.cpp
+  ByteBufferStream.cpp
+  ByteBufferUtils.cpp
+  ByteBufferWriter.cpp
+  COBSEncoding.cpp
+..\..\..\addons\ofxIO\libs\ofxIO\src\BackoffStrategy.cpp(115): warning C4244: 'return': conversion from 'uint64_t' to 'std::size_t', possible loss of data
+..\..\..\addons\ofxIO\libs\ofxIO\src\BackoffStrategy.cpp(129): warning C4244: '=': conversion from 'double' to 'uint64_t', possible loss of data
+  Compression.cpp
+C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2372): warning C4996: 'std::copy::_Unchecked_iterators::_Deprecate': Call to 'std::copy' with parameters that may be unsafe - this call relies on the caller to check that the passed values are correct. To disable this warning, use -D_SCL_SECURE_NO_WARNINGS. See documentation on how to use Visual C++ 'Checked Iterators' (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBuffer.cpp)
+  C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\include\xutility(2372): note: see declaration of 'std::copy::_Unchecked_iterators::_Deprecate' (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBuffer.cpp)
+  ..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBuffer.cpp(94): note: see reference to function template instantiation '_OutIt std::copy<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<unsigned char>>>,uint8_t*>(_InIt,_InIt,_OutIt)' being compiled
+          with
+          [
+              _OutIt=uint8_t *,
+              _InIt=std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<unsigned char>>>
+          ]
+  DeviceFilter.cpp
+  DirectoryFilter.cpp
+  DirectoryUtils.cpp
+  DirectoryWatcher.cpp
+  DirectoryWatcherManager.cpp
+  FileExtensionFilter.cpp
+  FilteredStreams.cpp
+  Hash.cpp
+  HexBinaryEncoding.cpp
+  HiddenFileFilter.cpp
+  ImageUtils.cpp
+  JSONUtils.cpp
+  LinkFilter.cpp
+  PathFilterCollection.cpp
+  PollingThread.cpp
+  RecursiveDirectoryIterator.cpp
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(142): warning C4267: 'return': conversion from 'size_t' to 'Poco::UInt16', possible loss of data (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(141): note: while compiling class template member function 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(153): note: see reference to function template instantiation 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(152): note: while compiling class template member function 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to function template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: while compiling class template member function 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>::RecursiveDirectoryIterator(const Poco::Path &,Poco::UInt16)' (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(400): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>' being compiled (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp)
+  RecursiveDirectoryIteratorStategies.cpp
+  RegexPathFilter.cpp
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(142): warning C4267: 'return': conversion from 'size_t' to 'Poco::UInt16', possible loss of data (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(141): note: while compiling class template member function 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(153): note: see reference to function template instantiation 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(152): note: while compiling class template member function 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to function template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: while compiling class template member function 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>::RecursiveDirectoryIterator(const Poco::Path &,Poco::UInt16)' (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(400): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>' being compiled (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp)
+C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(142): warning C4267: 'return': conversion from 'size_t' to 'Poco::UInt16', possible loss of data (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(141): note: while compiling class template member function 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(153): note: see reference to function template instantiation 'Poco::UInt16 ofx::RecursiveDirectoryIteratorImpl<TTravStr>::depthFun(const ofx::RecursiveDirectoryIteratorImpl<TTravStr>::Stack &)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIteratorImpl.h(152): note: while compiling class template member function 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)'
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to function template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>::RecursiveDirectoryIteratorImpl(const std::string &,Poco::UInt16)' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIteratorImpl<TTravStr>' being compiled
+          with
+          [
+              TTravStr=ofx::ChildrenFirstTraverse
+          ] (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(306): note: while compiling class template member function 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>::RecursiveDirectoryIterator(const Poco::Path &,Poco::UInt16)' (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\addons\ofxIO\libs\ofxIO\include\ofx/RecursiveDirectoryIterator.h(400): note: see reference to class template instantiation 'ofx::RecursiveDirectoryIterator<ofx::ChildrenFirstTraverse>' being compiled (compiling source file ..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp)
+  SearchPath.cpp
+..\..\..\addons\ofxIO\libs\ofxIO\src\ImageUtils.cpp(126): warning C4267: '=': conversion from 'size_t' to 'unsigned char', possible loss of data
+  SLIPEncoding.cpp
+  StreamFilters.cpp
+  Thread.cpp
+  ThreadsafeLoggerChannel.cpp
+  URIEncoding.cpp
+  snappy-c.cc
+  snappy-sinksource.cc
+  snappy-stubs-internal.cc
+  snappy.cc
+..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc(217): warning C4267: '=': conversion from 'size_t' to 'char', possible loss of data
+..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc(221): warning C4267: 'argument': conversion from 'size_t' to 'snappy::uint16', possible loss of data
+..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc(1259): warning C4018: '<': signed/unsigned mismatch
+  ..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc(1256): note: while compiling class template member function 'bool snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>::AppendFromSelf(std::size_t,std::size_t)'
+  ..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc(637): note: see reference to function template instantiation 'bool snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>::AppendFromSelf(std::size_t,std::size_t)' being compiled
+  ..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc(1378): note: see reference to class template instantiation 'snappy::SnappyScatteredWriter<snappy::SnappySinkAllocator>' being compiled
+  JSONRPCServer.cpp
+  BaseMessage.cpp
+  Error.cpp
+  Errors.cpp
+  JSONRPCUtils.cpp
+  MethodArgs.cpp
+  MethodRegistry.cpp
+  Request.cpp
+  Response.cpp
+..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\MethodRegistry.cpp(114): warning C4101: 'exc': unreferenced local variable
+  MediaTypeMap.cpp
+  ofxNetworkUtils.cpp
+  IPAddressRange.cpp
+  NetworkInterfaceListener.cpp
+  NetworkUtils.cpp
+..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src\NetworkInterfaceListener.cpp(49): warning C4101: 'exc': unreferenced local variable
+  ofxXmlPoco.cpp
+  ofSSLManager.cpp
+     Creating library bin\drawingServer_debug.lib and object bin\drawingServer_debug.exp
+  drawingServer.vcxproj -> C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\apps\myApps\drawingServer\bin\drawingServer_debug.exe
+  drawingServer.vcxproj -> bin\drawingServer_debug.pdb (Full PDB)
+  
+  	                   2	C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\libs\fmodex\lib\vs\Win32\
+  	  *EXTRA File 		 5647872	C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\apps\myApps\drawingServer\bin\FreeImage.dll
+  
+  	                   1	C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\libs\FreeImage\lib\vs\Win32\
+  	  *EXTRA File 		 1266176	C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\apps\myApps\drawingServer\bin\fmodex.dll
+  	  *EXTRA File 		 1312768	C:\Users\carlos\Documents\Projects\ColaborativeDrawing\of_v0.9.8_vs_nightly\apps\myApps\drawingServer\bin\fmodexL.dll

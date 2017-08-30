@@ -1,0 +1,550 @@
+<?xml version="1.0"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="Debug|Win32">
+			<Configuration>Debug</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Debug|x64">
+			<Configuration>Debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|Win32">
+			<Configuration>Release</Configuration>
+			<Platform>Win32</Platform>
+		</ProjectConfiguration>
+		<ProjectConfiguration Include="Release|x64">
+			<Configuration>Release</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{7FD42DF7-442E-479A-BA76-D0022F99702A}</ProjectGuid>
+		<Keyword>Win32Proj</Keyword>
+		<RootNamespace>drawingServer</RootNamespace>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>Unicode</CharacterSet>
+		<WholeProgramOptimization>true</WholeProgramOptimization>
+		<PlatformToolset>v140</PlatformToolset>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksRelease.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+		<Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+		<Import Project="..\..\..\libs\openFrameworksCompiled\project\vs\openFrameworksDebug.props" />
+	</ImportGroup>
+	<PropertyGroup Label="UserMacros" />
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<TargetName>$(ProjectName)_debug</TargetName>
+		<LinkIncremental>true</LinkIncremental>
+		<GenerateManifest>true</GenerateManifest>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<OutDir>bin\</OutDir>
+		<IntDir>obj\$(Configuration)\</IntDir>
+		<LinkIncremental>false</LinkIncremental>
+	</PropertyGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxHTTP\libs;..\..\..\addons\ofxHTTP\libs\ofxHTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\src;..\..\..\addons\ofxHTTP\src;..\..\..\addons\ofxIO\libs;..\..\..\addons\ofxIO\libs\alphanum;..\..\..\addons\ofxIO\libs\alphanum\include;..\..\..\addons\ofxIO\libs\brotli;..\..\..\addons\ofxIO\libs\brotli\src;..\..\..\addons\ofxIO\libs\brotli\src\common;..\..\..\addons\ofxIO\libs\brotli\src\dec;..\..\..\addons\ofxIO\libs\brotli\src\enc;..\..\..\addons\ofxIO\libs\brotli\src\tools;..\..\..\addons\ofxIO\libs\lz4;..\..\..\addons\ofxIO\libs\lz4\src;..\..\..\addons\ofxIO\libs\ofxIO;..\..\..\addons\ofxIO\libs\ofxIO\include;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO;..\..\..\addons\ofxIO\libs\ofxIO\src;..\..\..\addons\ofxIO\libs\snappy;..\..\..\addons\ofxIO\libs\snappy\src;..\..\..\addons\ofxIO\src;..\..\..\addons\ofxJSONRPC\libs;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\src;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src;..\..\..\addons\ofxJSONRPC\src;..\..\..\addons\ofxMediaType\libs;..\..\..\addons\ofxMediaType\libs\ofxMediaType;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include\ofx;..\..\..\addons\ofxMediaType\libs\ofxMediaType\src;..\..\..\addons\ofxMediaType\src;..\..\..\addons\ofxNetworkUtils\libs;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src;..\..\..\addons\ofxNetworkUtils\src;..\..\..\addons\ofxPoco\libs\poco\include;..\..\..\addons\ofxPoco\src;..\..\..\addons\ofxSSLManager\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+			<AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);PocoCryptomdd.lib;PocoDatamdd.lib;PocoDataSQLitemdd.lib;PocoFoundationmdd.lib;PocoJSONmdd.lib;PocoMongoDBmdd.lib;PocoNetmdd.lib;PocoNetSSLmdd.lib;PocoPDFmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;PocoZipmdd.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxPoco\libs\poco\lib\vs\Win32\Debug</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+		<ClCompile>
+			<Optimization>Disabled</Optimization>
+			<BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxHTTP\libs;..\..\..\addons\ofxHTTP\libs\ofxHTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\src;..\..\..\addons\ofxHTTP\src;..\..\..\addons\ofxIO\libs;..\..\..\addons\ofxIO\libs\alphanum;..\..\..\addons\ofxIO\libs\alphanum\include;..\..\..\addons\ofxIO\libs\brotli;..\..\..\addons\ofxIO\libs\brotli\src;..\..\..\addons\ofxIO\libs\brotli\src\common;..\..\..\addons\ofxIO\libs\brotli\src\dec;..\..\..\addons\ofxIO\libs\brotli\src\enc;..\..\..\addons\ofxIO\libs\brotli\src\tools;..\..\..\addons\ofxIO\libs\lz4;..\..\..\addons\ofxIO\libs\lz4\src;..\..\..\addons\ofxIO\libs\ofxIO;..\..\..\addons\ofxIO\libs\ofxIO\include;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO;..\..\..\addons\ofxIO\libs\ofxIO\src;..\..\..\addons\ofxIO\libs\snappy;..\..\..\addons\ofxIO\libs\snappy\src;..\..\..\addons\ofxIO\src;..\..\..\addons\ofxJSONRPC\libs;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\src;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src;..\..\..\addons\ofxJSONRPC\src;..\..\..\addons\ofxMediaType\libs;..\..\..\addons\ofxMediaType\libs\ofxMediaType;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include\ofx;..\..\..\addons\ofxMediaType\libs\ofxMediaType\src;..\..\..\addons\ofxMediaType\src;..\..\..\addons\ofxNetworkUtils\libs;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src;..\..\..\addons\ofxNetworkUtils\src;..\..\..\addons\ofxPoco\libs\poco\include;..\..\..\addons\ofxPoco\src;..\..\..\addons\ofxSSLManager\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+			<AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+		</ClCompile>
+		<Link>
+			<GenerateDebugInformation>true</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);PocoCryptomdd.lib;PocoDatamdd.lib;PocoDataSQLitemdd.lib;PocoFoundationmdd.lib;PocoJSONmdd.lib;PocoMongoDBmdd.lib;PocoNetmdd.lib;PocoNetSSLmdd.lib;PocoPDFmdd.lib;PocoUtilmdd.lib;PocoXMLmdd.lib;PocoZipmdd.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxPoco\libs\poco\lib\vs\x64\Debug</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxHTTP\libs;..\..\..\addons\ofxHTTP\libs\ofxHTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\src;..\..\..\addons\ofxHTTP\src;..\..\..\addons\ofxIO\libs;..\..\..\addons\ofxIO\libs\alphanum;..\..\..\addons\ofxIO\libs\alphanum\include;..\..\..\addons\ofxIO\libs\brotli;..\..\..\addons\ofxIO\libs\brotli\src;..\..\..\addons\ofxIO\libs\brotli\src\common;..\..\..\addons\ofxIO\libs\brotli\src\dec;..\..\..\addons\ofxIO\libs\brotli\src\enc;..\..\..\addons\ofxIO\libs\brotli\src\tools;..\..\..\addons\ofxIO\libs\lz4;..\..\..\addons\ofxIO\libs\lz4\src;..\..\..\addons\ofxIO\libs\ofxIO;..\..\..\addons\ofxIO\libs\ofxIO\include;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO;..\..\..\addons\ofxIO\libs\ofxIO\src;..\..\..\addons\ofxIO\libs\snappy;..\..\..\addons\ofxIO\libs\snappy\src;..\..\..\addons\ofxIO\src;..\..\..\addons\ofxJSONRPC\libs;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\src;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src;..\..\..\addons\ofxJSONRPC\src;..\..\..\addons\ofxMediaType\libs;..\..\..\addons\ofxMediaType\libs\ofxMediaType;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include\ofx;..\..\..\addons\ofxMediaType\libs\ofxMediaType\src;..\..\..\addons\ofxMediaType\src;..\..\..\addons\ofxNetworkUtils\libs;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src;..\..\..\addons\ofxNetworkUtils\src;..\..\..\addons\ofxPoco\libs\poco\include;..\..\..\addons\ofxPoco\src;..\..\..\addons\ofxSSLManager\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+			<MultiProcessorCompilation>true</MultiProcessorCompilation>
+			<AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);PocoCryptomd.lib;PocoDatamd.lib;PocoDataSQLitemd.lib;PocoFoundationmd.lib;PocoJSONmd.lib;PocoMongoDBmd.lib;PocoNetmd.lib;PocoNetSSLmd.lib;PocoPDFmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;PocoZipmd.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxPoco\libs\poco\lib\vs\Win32\Release</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+		<ClCompile>
+			<WholeProgramOptimization>false</WholeProgramOptimization>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+			<WarningLevel>Level3</WarningLevel>
+			<AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxHTTP\libs;..\..\..\addons\ofxHTTP\libs\ofxHTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxHTTP\libs\ofxHTTP\src;..\..\..\addons\ofxHTTP\src;..\..\..\addons\ofxIO\libs;..\..\..\addons\ofxIO\libs\alphanum;..\..\..\addons\ofxIO\libs\alphanum\include;..\..\..\addons\ofxIO\libs\brotli;..\..\..\addons\ofxIO\libs\brotli\src;..\..\..\addons\ofxIO\libs\brotli\src\common;..\..\..\addons\ofxIO\libs\brotli\src\dec;..\..\..\addons\ofxIO\libs\brotli\src\enc;..\..\..\addons\ofxIO\libs\brotli\src\tools;..\..\..\addons\ofxIO\libs\lz4;..\..\..\addons\ofxIO\libs\lz4\src;..\..\..\addons\ofxIO\libs\ofxIO;..\..\..\addons\ofxIO\libs\ofxIO\include;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx;..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO;..\..\..\addons\ofxIO\libs\ofxIO\src;..\..\..\addons\ofxIO\libs\snappy;..\..\..\addons\ofxIO\libs\snappy\src;..\..\..\addons\ofxIO\src;..\..\..\addons\ofxJSONRPC\libs;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx\HTTP;..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\src;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC;..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src;..\..\..\addons\ofxJSONRPC\src;..\..\..\addons\ofxMediaType\libs;..\..\..\addons\ofxMediaType\libs\ofxMediaType;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include;..\..\..\addons\ofxMediaType\libs\ofxMediaType\include\ofx;..\..\..\addons\ofxMediaType\libs\ofxMediaType\src;..\..\..\addons\ofxMediaType\src;..\..\..\addons\ofxNetworkUtils\libs;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net;..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src;..\..\..\addons\ofxNetworkUtils\src;..\..\..\addons\ofxPoco\libs\poco\include;..\..\..\addons\ofxPoco\src;..\..\..\addons\ofxSSLManager\src</AdditionalIncludeDirectories>
+			<CompileAs>CompileAsCpp</CompileAs>
+			<ObjectFileName>$(IntDir)/%(RelativeDir)/</ObjectFileName>
+			<AdditionalOptions>-DPOCO_STATIC</AdditionalOptions>
+		</ClCompile>
+		<Link>
+			<IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+			<GenerateDebugInformation>false</GenerateDebugInformation>
+			<SubSystem>Console</SubSystem>
+			<OptimizeReferences>true</OptimizeReferences>
+			<EnableCOMDATFolding>true</EnableCOMDATFolding>
+			<RandomizedBaseAddress>false</RandomizedBaseAddress>
+			<AdditionalDependencies>%(AdditionalDependencies);PocoCryptomd.lib;PocoDatamd.lib;PocoDataSQLitemd.lib;PocoFoundationmd.lib;PocoJSONmd.lib;PocoMongoDBmd.lib;PocoNetmd.lib;PocoNetSSLmd.lib;PocoPDFmd.lib;PocoUtilmd.lib;PocoXMLmd.lib;PocoZipmd.lib</AdditionalDependencies>
+			<AdditionalLibraryDirectories>%(AdditionalLibraryDirectories);..\..\..\addons\ofxPoco\libs\poco\lib\vs\x64\Release</AdditionalLibraryDirectories>
+		</Link>
+		<PostBuildEvent />
+	</ItemDefinitionGroup>
+	<ItemGroup>
+		<ClCompile Include="src\main.cpp" />
+		<ClCompile Include="src\ofApp.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\AuthScope.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\BaseClient.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\BaseRoute.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\BaseServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Client.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientCache.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientEvents.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientProgressStream.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientSessionProvider.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientSessionSettings.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ClientState.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Context.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Cookie.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\CookieStore.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\CookieUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Credentials.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\CredentialStore.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\DefaultClientHeaders.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\DefaultCookieProcessor.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\DefaultEncodingResponseStreamFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\DefaultProxyProcessor.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\DefaultRedirectProcessor.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\FileSystemRoute.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\FormRequest.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\GetRequest.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\GetRequestTask.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\HeadRequest.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\HTTPClient.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\HTTPHost.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\HTTPUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\IPVideoFrame.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\IPVideoRoute.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\JSONRequest.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\JSONWebToken.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\OAuth10Credentials.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\OAuth10HTTPClient.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\OAuth10RequestFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\OAuth20Credentials.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\OAuth20HTTPClient.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\OAuth20RequestFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\PostRequest.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\PostRoute.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Progress.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ProxySettings.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\PutRequest.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Request.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\RequestHandlerAdapter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Response.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\Session.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SessionStore.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SimpleClient.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SimpleFileServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SimpleIPVideoServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SimplePostServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SimpleSSEServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SimpleWebSocketServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SSEConnection.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SSEFrame.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\SSERoute.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\ThreadSettings.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\URIBuilder.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\WebSocketConnection.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\WebSocketExtensions.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\WebSocketFrame.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\src\WebSocketRoute.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\common\dictionary.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\bit_reader.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\decode.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\huffman.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\state.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\backward_references.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\bit_cost.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\block_splitter.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\brotli_bit_stream.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\cluster.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\compressor.cc" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\compress_fragment.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\compress_fragment_two_pass.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\encode.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\encode_parallel.cc" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\entropy_encode.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\histogram.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\literal_cost.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\memory.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\metablock.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\static_dict.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\streams.cc" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\utf8_util.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\lz4\src\lz4.c" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\BackoffStrategy.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\Base64Encoding.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBuffer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBufferReader.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBufferStream.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBufferUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ByteBufferWriter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\COBSEncoding.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\Compression.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\DeviceFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcher.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\DirectoryWatcherManager.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\FileExtensionFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\FilteredStreams.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\Hash.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\HexBinaryEncoding.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\HiddenFileFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ImageUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\JSONUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\LinkFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\PathFilterCollection.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\PollingThread.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIterator.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\RecursiveDirectoryIteratorStategies.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\RegexPathFilter.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\SearchPath.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\SLIPEncoding.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\StreamFilters.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\Thread.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\ThreadsafeLoggerChannel.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\ofxIO\src\URIEncoding.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-c.cc" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-sinksource.cc" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-stubs-internal.cc" />
+		<ClCompile Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy.cc" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\src\JSONRPCServer.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\BaseMessage.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\Error.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\Errors.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\JSONRPCUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\MethodArgs.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\MethodRegistry.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\Request.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\src\Response.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxMediaType\libs\ofxMediaType\src\MediaTypeMap.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxNetworkUtils\src\ofxNetworkUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src\IPAddressRange.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src\NetworkInterfaceListener.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\src\NetworkUtils.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxPoco\src\ofxXmlPoco.cpp" />
+		<ClCompile Include="..\..\..\addons\ofxSSLManager\src\ofSSLManager.cpp" />
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\src\ofxHTTP.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\AbstractClientTypes.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\AbstractServerTypes.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Authentication.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\AuthScope.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\BaseClient.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\BaseRoute.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\BaseServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Client.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ClientCache.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ClientEvents.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ClientProgressStream.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ClientSessionProvider.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ClientSessionSettings.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ClientState.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Context.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Cookie.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\CookieStore.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\CookieUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Credentials.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\CredentialStore.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\DefaultClientHeaders.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\DefaultCookieProcessor.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\DefaultEncodingResponseStreamFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\DefaultProxyProcessor.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\DefaultRedirectProcessor.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\FileSystemRoute.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\FormRequest.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\GetRequest.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\GetRequestTask.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\HeadRequest.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\HTTP.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\HTTPClient.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\HTTPHost.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\HTTPUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\IPVideoFrame.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\IPVideoRoute.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\JSONRequest.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\JSONResponse.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\JSONWebToken.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\OAuth10Credentials.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\OAuth10HTTPClient.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\OAuth10RequestFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\OAuth20Credentials.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\OAuth20HTTPClient.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\OAuth20RequestFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\PostRequest.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\PostRoute.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\PostRouteEvents.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Progress.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ProxySettings.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\PutRequest.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Request.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\RequestHandlerAdapter.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Response.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ServerEvents.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\Session.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SessionStore.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SimpleClient.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SimpleFileServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SimpleIPVideoServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SimplePostServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SimpleSSEServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SimpleWebSocketServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SSEConnection.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SSEEvents.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SSEFrame.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\SSERoute.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ThreadErrorHandler.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\ThreadSettings.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\URIBuilder.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\WebSocketConnection.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\WebSocketEvents.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\WebSocketExtensions.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\WebSocketFrame.h" />
+		<ClInclude Include="..\..\..\addons\ofxHTTP\libs\ofxHTTP\include\ofx\HTTP\WebSocketRoute.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\src\ofxIO.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\alphanum\include\alphanum.hpp" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\common\constants.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\common\dictionary.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\common\port.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\common\types.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\bit_reader.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\context.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\decode.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\huffman.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\port.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\prefix.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\state.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\dec\transform.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\backward_references.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\backward_references_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\bit_cost.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\bit_cost_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\block_encoder_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\block_splitter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\block_splitter_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\brotli_bit_stream.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\cluster.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\cluster_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\command.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\compressor.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\compress_fragment.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\compress_fragment_two_pass.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\context.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\dictionary_hash.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\encode.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\encode_parallel.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\entropy_encode.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\entropy_encode_static.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\fast_log.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\find_match_length.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\hash.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\hash_forgetful_chain_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\hash_longest_match_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\hash_longest_match_quickly_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\histogram.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\histogram_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\literal_cost.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\memory.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\metablock.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\metablock_inc.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\port.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\prefix.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\quality.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\ringbuffer.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\static_dict.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\static_dict_lut.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\streams.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\utf8_util.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\enc\write_bits.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\brotli\src\tools\version.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\lz4\src\lz4.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\AbstractCache.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\DirectoryWatcher.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\AbstractTypes.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\BackoffStrategy.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\Base64Encoding.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ByteBuffer.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ByteBufferParser.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ByteBufferReader.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ByteBufferStream.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ByteBufferUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ByteBufferWriter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\COBSEncoding.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\Compression.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\DeviceFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\DirectoryFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\DirectoryUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\DirectoryWatcherManager.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\FileExtensionFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\FilteredStreams.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\Hash.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\HexBinaryEncoding.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\HiddenFileFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ImageUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\JSONUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\LinkFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ObjectPool.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\PathFilterCollection.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\PollingThread.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\RegexPathFilter.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\SearchPath.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\SLIPEncoding.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\StreamFilters.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\Thread.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ThreadChannel.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\ThreadsafeLoggerChannel.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\IO\URIEncoding.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\LRUCache.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\LRUStrategy.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\ObjectPool.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\RecursiveDirectoryIterator.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\RecursiveDirectoryIteratorImpl.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\ofxIO\include\ofx\RecursiveDirectoryIteratorStategies.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-c.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-internal.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-sinksource.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-stubs-internal.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy-stubs-public.h" />
+		<ClInclude Include="..\..\..\addons\ofxIO\libs\snappy\src\snappy.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\src\ofxJSONRPC.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxHTTP\include\ofx\HTTP\JSONRPCServer.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\BaseMessage.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\Error.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\Errors.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\JSONRPC.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\JSONRPCUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\Method.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\MethodArgs.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\MethodRegistry.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\Request.h" />
+		<ClInclude Include="..\..\..\addons\ofxJSONRPC\libs\ofxJSONRPC\include\ofx\JSONRPC\Response.h" />
+		<ClInclude Include="..\..\..\addons\ofxMediaType\src\ofxMediaType.h" />
+		<ClInclude Include="..\..\..\addons\ofxMediaType\libs\ofxMediaType\include\ofx\AbstractMediaTypeProvider.h" />
+		<ClInclude Include="..\..\..\addons\ofxMediaType\libs\ofxMediaType\include\ofx\MediaTypeMap.h" />
+		<ClInclude Include="..\..\..\addons\ofxNetworkUtils\src\ofxNetworkUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net\IPAddressRange.h" />
+		<ClInclude Include="..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net\NetworkInterfaceListener.h" />
+		<ClInclude Include="..\..\..\addons\ofxNetworkUtils\libs\ofxNetworkUtils\include\ofx\Net\NetworkUtils.h" />
+		<ClInclude Include="..\..\..\addons\ofxPoco\src\ofxXmlPoco.h" />
+		<ClInclude Include="..\..\..\addons\ofxSSLManager\src\ofSSLManager.h" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="$(OF_ROOT)\libs\openFrameworksCompiled\project\vs\openframeworksLib.vcxproj">
+			<Project>{5837595d-aca9-485c-8e76-729040ce4b0b}</Project>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc">
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">/D_DEBUG %(AdditionalOptions)</AdditionalOptions>
+			<AdditionalIncludeDirectories>$(OF_ROOT)\libs\openFrameworksCompiled\project\vs</AdditionalIncludeDirectories>
+		</ResourceCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+	<ProjectExtensions>
+		<VisualStudio>
+			<UserProperties RESOURCE_FILE="icon.rc" />
+		</VisualStudio>
+	</ProjectExtensions>
+</Project>
