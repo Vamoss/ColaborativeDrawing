@@ -54,12 +54,29 @@ void ofApp::setup()
 
     // Launch a browser with the address of the server.
     ofLaunchBrowser(server.url());
+
+
+	canvas.allocate(1024, 768);
 }
 
 
-void ofApp::draw()
+void ofApp::update()
 {
+	canvas.begin();
+	ofClear(0, 0, 0, 255);
+	ofDrawBitmapString("OF Frame " + ofToString(ofGetFrameNum()), 10, 30);
+	canvas.end();
+
+
+
+	//Spout
+	spout.sendTexture(canvas.getTexture(), "composition");
+}
+
+void ofApp::draw(){
     ofBackground(255);
+
+	canvas.draw(0, 0);
     ofDrawBitmapStringHighlight(userText, ofPoint(14, 18));
 }
 
@@ -69,6 +86,8 @@ void ofApp::exit()
     // Set the logger back to the default to make sure any
     // remaining messages are logged correctly.
     ofLogToConsole();
+
+	spout.exit();
 }
 
 

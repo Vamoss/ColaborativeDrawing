@@ -10,12 +10,14 @@
 
 #include "ofMain.h"
 #include "ofxJSONRPC.h"
+#include "ofxSpout2Sender.h"
 
 
 class ofApp: public ofBaseApp
 {
 public:
     void setup();
+	void update();
     void draw();
     void exit();
 
@@ -47,6 +49,9 @@ public:
     /// \brief Set the user text in a thread-safe way.
     /// \param text the user text to set.
     void setUserText(const std::string& text);
+
+	ofxSpout2::Sender spout;
+	ofFbo canvas;
 
 private:
     // A custom logging channel to mirror all log messages to the web clients.
