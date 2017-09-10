@@ -8,6 +8,7 @@
 #pragma once
 
 
+#include "ofTypes.h"
 #include "ofMain.h"
 #include "ofxJSONRPC.h"
 #include "ofxSpout2Sender.h"
@@ -20,6 +21,7 @@ public:
 	void update();
     void draw();
     void exit();
+	void keyPressed(int key);
 
     // Registered methods.
     void getText(ofx::JSONRPC::MethodArgs& args);
@@ -52,6 +54,9 @@ public:
 
 	ofxSpout2::Sender spout;
 	ofFbo canvas;
+	vector<ofJson> linesToDraw;
+
+	bool debug;
 
 private:
     // A custom logging channel to mirror all log messages to the web clients.

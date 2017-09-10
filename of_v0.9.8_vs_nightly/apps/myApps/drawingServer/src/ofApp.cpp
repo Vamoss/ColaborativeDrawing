@@ -56,28 +56,53 @@ void ofApp::setup()
     ofLaunchBrowser(server.url());
 
 
-	canvas.allocate(1024, 768);
+	canvas.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA);
+
+	debug = false;
 }
 
 
 void ofApp::update()
 {
 	canvas.begin();
-	ofClear(0, 0, 0, 255);
-	ofDrawBitmapString("OF Frame " + ofToString(ofGetFrameNum()), 10, 30);
+		ofSetColor(0, 10);
+		ofDrawRectangle(0, 0, ofGetWidth(), ofGetHeight());
 	canvas.end();
 
-
-
+	if (linesToDraw.size() > 0) {
+		std::unique_lock<std::mutex> lock(mutex);
+		canvas.begin();
+		for (int i = 0; i < linesToDraw.size(); i++) {
+			try {
+				int x1 = (float)linesToDraw[i]["x1"] * ofGetWidth();
+				int y1 = (float)linesToDraw[i]["y1"] * ofGetHeight();
+				int x2 = (float)linesToDraw[i]["x2"] * ofGetWidth();
+				int y2 = (float)linesToDraw[i]["y2"] * ofGetHeight();
+				int r = (float)linesToDraw[i]["color"]["r"];
+				int g = (float)linesToDraw[i]["color"]["g"];
+				int b = (float)linesToDraw[i]["color"]["b"];
+				int size = linesToDraw[i]["size"];
+				ofSetColor(r, g, b);
+				ofSetLineWidth(size);
+				ofDrawLine(x1, y1, x2, y2);
+			}
+			catch (const std::domain_error &e) {
+				//  handle it
+			}
+		}
+		canvas.end();
+		linesToDraw.clear();
+	}
 	//Spout
 	spout.sendTexture(canvas.getTexture(), "composition");
 }
 
 void ofApp::draw(){
-    ofBackground(255);
+	ofEnableBlendMode(OF_BLENDMODE_ALPHA);
+    ofBackground(0);
 
 	canvas.draw(0, 0);
-    ofDrawBitmapStringHighlight(userText, ofPoint(14, 18));
+    if(debug) ofDrawBitmapStringHighlight(userText, ofPoint(14, 18));
 }
 
 
@@ -90,6 +115,11 @@ void ofApp::exit()
 	spout.exit();
 }
 
+void ofApp::keyPressed(int key) {
+	if (key == ' ') {
+		debug = !debug;
+	}
+}
 
 void ofApp::ping()
 {
@@ -149,5 +179,6 @@ void ofApp::setUserText(const std::string& text)
 {
     std::unique_lock<std::mutex> lock(mutex);
     userText = text;
+	linesToDraw.push_back(ofJson::parse(userText));
 }
 

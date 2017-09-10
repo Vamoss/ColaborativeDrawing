@@ -1,19 +1,146 @@
-@charset "UTF-8";
-/*
- * jQuery File Upload Plugin CSS Example 8.8.2
- * https://github.com/blueimp/jQuery-File-Upload
- *
- * Copyright 2013, Sebastian Tschan
- * https://blueimp.net
- *
- * Licensed under the MIT license:
- * http://www.opensource.org/licenses/MIT
- */
-
-body {
-  padding-top: 60px;
+canvas{
+  display:block;
 }
 
-/*
- * http://stackoverflow.com/questions/11223615/how-to-use-font-awesome-for-checkboxes-etc
- */
+#message{
+	display: none;
+}
+
+.controls {
+	background-color: #222;
+	width: 100%;
+	min-height: 50px;
+	margin-bottom: 15px;
+	padding-top: 5px;
+}
+.controls:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+.color, #newColor {
+	display:block;
+	width: 40px;
+	height: 40px;
+	border-radius: 60px;
+	cursor: pointer;
+	border: 0;
+	box-shadow: 0 3px 0 0 #222;
+}
+
+.color {
+	float: left;
+	margin: 2px 5px 10px;
+}
+
+.red {
+	background: #fc4c4f;
+}
+
+.blue {
+	background: #4fa3fc;
+}
+
+.yellow {
+	background: #ECD13F;
+}
+
+.selected {
+	border: 7px solid #fff;
+}
+
+button {
+	background: #68B25B;
+	box-shadow: 0 3px 0 0 #6A845F;
+	color: #fff;
+	outline: none;
+	cursor: pointer;
+	text-shadow: 0 1px #6A845F;
+	font-size: 16px;
+	line-height: 40px;
+}
+
+#revealColorSelect {
+	border: none;
+	border-radius: 5px;
+	padding: 2px 15px;
+	font-size: 30px;
+	float: left;
+}
+
+/* New Color Palette */
+#colorSelect {
+	background: #fff;
+	border-radius: 5px;
+	clear: both;
+	margin: 20px auto 0;
+	padding: 10px;
+	width: 305px;
+    position: absolute;
+    top: 38px;
+    left: 20px;
+    z-index: 2;		
+	display:none;
+}
+
+#colorSelect:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
+#newColor {
+	width: 80px;
+	height: 80px;
+	border-radius: 3px;
+	box-shadow: none;
+	float: left;
+	border: none;
+	margin: 10px 20px 50px 10px;
+}
+
+#sizeSelect {
+    float: left;
+    padding: 11px 10px;
+}
+
+.sliders p {
+	margin: 8px 0;
+	vertical-align: middle;
+}
+
+.sliders label {
+	display: inline-block;
+	margin: 0 10px 0 0;
+	width: 35px;
+	font-size: 14px;
+	color: #6D574E;
+}
+
+.sliders input {
+	position: relative;
+	top: 2px;
+}
+
+#colorSelect button {
+	border: none;
+	border-top: 1px solid #6A845F;
+	border-radius: 0 0 5px 5px;
+	clear: both;
+	margin: 10px -10px -7px;
+	padding: 5px 10px;
+	width: 305px;
+}	
