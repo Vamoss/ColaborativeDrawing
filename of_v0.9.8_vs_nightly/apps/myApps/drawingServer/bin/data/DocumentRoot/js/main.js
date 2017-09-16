@@ -197,4 +197,18 @@ $(document).ready(function() {
 
     startDraw();
 
+    var url = new URL(window.location);
+    var debug = url.searchParams.get("debug");
+    if(debug==="true"){
+      console.log("Simulating clicks.");
+      painting = true;
+      lastPos = {x:0, y:0};
+      function simulate(){
+        var event = jQuery.Event( "mousemove" );
+        event.pageX = canvas[0].width*Math.random();
+        event.pageY = canvas[0].height*Math.random();
+        canvas.trigger( event );
+      }
+      setInterval(simulate, 100);
+    }
 });

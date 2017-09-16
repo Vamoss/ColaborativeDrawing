@@ -22,7 +22,7 @@ void ofApp::setup()
     pongPlayer.load("media/pong.wav");
 
     ofx::HTTP::JSONRPCServerSettings settings;
-    settings.setPort(8197);
+    settings.setPort(80);
 
     // Initialize the server.
     server.setup(settings);
@@ -56,7 +56,7 @@ void ofApp::setup()
     ofLaunchBrowser(server.url());
 
 
-	canvas.allocate(ofGetWidth(), ofGetHeight(), GL_RGBA);
+	canvas.allocate(ofGetWidth(), ofGetHeight());
 
 	debug = false;
 }
@@ -124,14 +124,14 @@ void ofApp::keyPressed(int key) {
 void ofApp::ping()
 {
     pingPlayer.play();
-    ofLogVerbose("ofApp::ping") << "Ping'd";
+	if (debug) ofLogVerbose("ofApp::ping") << "Ping'd";
 }
 
 
 void ofApp::pong()
 {
     pongPlayer.play();
-    ofLogVerbose("ofApp::pong") << "Pong'd";
+	if (debug) ofLogVerbose("ofApp::pong") << "Pong'd";
 }
 
 
@@ -139,7 +139,7 @@ void ofApp::getText(ofx::JSONRPC::MethodArgs& args)
 {
     // Set the result equal to the substring.
     args.result = getRandomText();
-    ofLogVerbose("ofApp::getText") << args.result.dump(4);
+	if (debug) ofLogVerbose("ofApp::getText") << args.result.dump(4);
 }
 
 
@@ -147,7 +147,7 @@ void ofApp::setText(ofx::JSONRPC::MethodArgs& args)
 {
     // Set the user text.
     setUserText(args.params);
-    ofLogVerbose("ofApp::setText") << args.params.dump(4);
+	if (debug) ofLogVerbose("ofApp::setText") << args.params.dump(4);
 }
 
 
